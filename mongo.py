@@ -18,9 +18,6 @@ class MongoClient:
         """initiates pymongo client"""
         logging.info("Initiating Mongo client ...")
 
-        # with open(".env.json", "rb") as env_vars:
-        # _vars = json.load(env_vars)
-
         uri = (
             f"mongodb+srv://{os.getenv('MONGO_USER')}:{os.getenv('MONGO_PWD')}@"
             f"{os.getenv('MONGO_CLUSTER')}.mpakn.mongodb.net/?retryWrites=true&w=majority"
@@ -34,6 +31,3 @@ class MongoClient:
         """sets the collection that the client will accessed"""
         logging.info("Accessing collection: %s.%s", database, collection)
         self.collection = self.client[database][collection]
-
-    # def __del__(self):
-    #     self.client.close()

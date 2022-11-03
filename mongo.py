@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-pymongoarrow.monkey.patch_all()
+# pymongoarrow.monkey.patch_all()
 
 
 class MongoClient:

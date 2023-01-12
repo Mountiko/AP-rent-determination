@@ -1,0 +1,10 @@
+Hyperparameters:
+{'categorical_features': None, 'early_stopping': 'auto', 'l2_regularization': 0.0, 'learning_rate': 0.1, 'loss': 'squared_error', 'max_bins': 255, 'max_depth': None, 'max_iter': 100, 'max_leaf_nodes': 31, 'min_samples_leaf': 20, 'monotonic_cst': None, 'n_iter_no_change': 10, 'quantile': None, 'random_state': 0, 'scoring': 'loss', 'tol': 1e-07, 'validation_fraction': 0.1, 'verbose': 0, 'warm_start': False}
+
+Model score with all features:
+[['Schleswig-Holstein', 70.52], ['Bremen', 66.36], ['Hessen', 61.81], ['Hamburg', 60.89], ['Thüringen', 72.69], ['Nordrhein-Westfalen', 55.62], ['Mecklenburg-Vorpommern', 69.67], ['Bayern', 54.56], ['Sachsen', 69.0], ['Baden-Württemberg', 54.75], ['Brandenburg', 73.17], ['Saarland', 63.41], ['Berlin', 74.02], ['Sachsen-Anhalt', 73.47], ['Rheinland-Pfalz', 63.6], ['Niedersachsen', 63.61], ['Schleswig-Holstein', 28.21], ['Bremen', 21.5], ['Hessen', 17.43], ['Hamburg', 20.55], ['Thüringen', 26.76], ['Nordrhein-Westfalen', 21.95], ['Mecklenburg-Vorpommern', 16.73], ['Bayern', 18.86], ['Sachsen', 23.56], ['Baden-Württemberg', 21.86], ['Brandenburg', 21.56], ['Saarland', 25.85], ['Berlin', 10.92], ['Sachsen-Anhalt', 31.74], ['Rheinland-Pfalz', 17.66], ['Niedersachsen', 22.75]]
+65.446875
+
+Model score with important features:
+[]
+nan

@@ -1,0 +1,8 @@
+Numerical Feature Ranges BEFORE IQR removal:
+
+LivingSpace Max: 350.0
+LivingSpace Min: 10.0
+
+energyConsumption Max: 748.0
+energyConsumption Min: 20.0
+

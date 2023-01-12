@@ -1,0 +1,59 @@
+Model performance:
+67.87485648609302
+
+Model with Hyperparameters:
+lgb.LGBMRegressor()
+
+Calculating time:
+ca. 17 seconds
+
+SchleswigHolstein:
+['Prediction on dataframe: ', ['SchleswigHolstein'], 'Evaluating with Dataframe: ', 'SchleswigHolstein', 'Prediction score on test data: ', 72.58, 'Number of rows of training data: ', 1688]
+
+Bremen:
+['Prediction on dataframe: ', ['Bremen', 'Niedersachsen'], 'Evaluating with Dataframe: ', 'Bremen', 'Prediction score on test data: ', 68.22, 'Number of rows of training data: ', 3676]
+
+Hessen:
+['Prediction on dataframe: ', ['Hessen'], 'Evaluating with Dataframe: ', 'Hessen', 'Prediction score on test data: ', 68.6, 'Number of rows of training data: ', 2752]
+
+Hamburg:
+['Prediction on dataframe: ', ['Hamburg'], 'Evaluating with Dataframe: ', 'Hamburg', 'Prediction score on test data: ', 62.04, 'Number of rows of training data: ', 1840]
+
+Th�ringen:
+['Prediction on dataframe: ', ['Th�ringen'], 'Evaluating with Dataframe: ', 'Th�ringen', 'Prediction score on test data: ', 72.74, 'Number of rows of training data: ', 2612]
+
+NordrheinWestfalen:
+['Prediction on dataframe: ', ['NordrheinWestfalen'], 'Evaluating with Dataframe: ', 'NordrheinWestfalen', 'Prediction score on test data: ', 61.32, 'Number of rows of training data: ', 8972]
+
+MecklenburgVorpommern:
+['Prediction on dataframe: ', ['MecklenburgVorpommern'], 'Evaluating with Dataframe: ', 'MecklenburgVorpommern', 'Prediction score on test data: ', 75.7, 'Number of rows of training data: ', 1576]
+
+BayernNORD:
+['Prediction on dataframe: ', ['BayernNORD'], 'Evaluating with Dataframe: ', 'BayernNORD', 'Prediction score on test data: ', 64.01, 'Number of rows of training data: ', 3155]
+
+BayernS�D:
+['Prediction on dataframe: ', ['BayernS�D'], 'Evaluating with Dataframe: ', 'BayernS�D', 'Prediction score on test data: ', 64.38, 'Number of rows of training data: ', 1749]
+
+Sachsen:
+['Prediction on dataframe: ', ['Sachsen'], 'Evaluating with Dataframe: ', 'Sachsen', 'Prediction score on test data: ', 69.14, 'Number of rows of training data: ', 12584]
+
+Brandenburg:
+['Prediction on dataframe: ', ['Brandenburg'], 'Evaluating with Dataframe: ', 'Brandenburg', 'Prediction score on test data: ', 73.41, 'Number of rows of training data: ', 1382]
+
+Berlin:
+['Prediction on dataframe: ', ['Berlin'], 'Evaluating with Dataframe: ', 'Berlin', 'Prediction score on test data: ', 71.98, 'Number of rows of training data: ', 1553]
+
+Saarland:
+['Prediction on dataframe: ', ['Saarland', 'RheinlandPfalz'], 'Evaluating with Dataframe: ', 'Saarland', 'Prediction score on test data: ', 60.27, 'Number of rows of training data: ', 1284]
+
+SachsenAnhalt:
+['Prediction on dataframe: ', ['SachsenAnhalt'], 'Evaluating with Dataframe: ', 'SachsenAnhalt', 'Prediction score on test data: ', 74.5, 'Number of rows of training data: ', 4986]
+
+BadenW�rttemberg:
+['Prediction on dataframe: ', ['BadenW�rttemberg'], 'Evaluating with Dataframe: ', 'BadenW�rttemberg', 'Prediction score on test data: ', 57.96, 'Number of rows of training data: ', 2388]
+
+Niedersachsen:
+['Prediction on dataframe: ', ['Niedersachsen'], 'Evaluating with Dataframe: ', 'Niedersachsen', 'Prediction score on test data: ', 71.55, 'Number of rows of training data: ', 3163]
+
+RheinlandPfalz:
+['Prediction on dataframe: ', ['Saarland', 'RheinlandPfalz'], 'Evaluating with Dataframe: ', 'RheinlandPfalz', 'Prediction score on test data: ', 71.89, 'Number of rows of training data: ', 1284]

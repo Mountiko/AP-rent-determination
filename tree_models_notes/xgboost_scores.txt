@@ -1,0 +1,10 @@
+Hyperparameters:
+{'objective': 'reg:squarederror', 'base_score': 0.5, 'booster': 'gbtree', 'callbacks': None, 'colsample_bylevel': 1, 'colsample_bynode': 1, 'colsample_bytree': 0.8, 'early_stopping_rounds': None, 'enable_categorical': False, 'eval_metric': None, 'gamma': 0, 'gpu_id': -1, 'grow_policy': 'depthwise', 'importance_type': None, 'interaction_constraints': '', 'learning_rate': 0.100000001, 'max_bin': 256, 'max_cat_to_onehot': 4, 'max_delta_step': 0, 'max_depth': 10, 'max_leaves': 0, 'min_child_weight': 5, 'missing': nan, 'monotone_constraints': '()', 'n_estimators': 100, 'n_jobs': 0, 'num_parallel_tree': 1, 'predictor': 'auto', 'random_state': 0, 'reg_alpha': 0, 'reg_lambda': 1, 'sampling_method': 'uniform', 'scale_pos_weight': 1, 'subsample': 0.8, 'tree_method': 'exact', 'validate_parameters': 1, 'verbosity': None, 'eta': 0.1}
+
+Model score with all features:
+[['Schleswig-Holstein', 72.42], ['Bremen', 66.82], ['Hessen', 65.77], ['Hamburg', 65.95], ['Thüringen', 76.54], ['Nordrhein-Westfalen', 64.27], ['Mecklenburg-Vorpommern', 73.35], ['Bayern', 62.69], ['Sachsen', 76.05], ['Baden-Württemberg', 60.75], ['Brandenburg', 76.15], ['Saarland', 65.85], ['Berlin', 75.11], ['Sachsen-Anhalt', 77.41], ['Rheinland-Pfalz', 66.67], ['Niedersachsen', 68.33]]
+69.633125
+
+Model score with important features:
+[['Schleswig-Holstein', 26.31], ['Bremen', 22.43], ['Hessen', 17.67], ['Hamburg', 20.4], ['Thüringen', 25.77], ['Nordrhein-Westfalen', 20.53], ['Mecklenburg-Vorpommern', 15.99], ['Bayern', 18.69], ['Sachsen', 23.88], ['Baden-Württemberg', 21.56], ['Brandenburg', 21.56], ['Saarland', 25.37], ['Berlin', 10.7], ['Sachsen-Anhalt', 31.03], ['Rheinland-Pfalz', 16.94], ['Niedersachsen', 22.62]]
+21.340625000000003

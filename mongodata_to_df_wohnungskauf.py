@@ -27,7 +27,7 @@ MONGO = MongoClient()
 
 if __name__ == "__main__":
 
-    MONGO.set_collection("students", "wohnung_mieten")
+    MONGO.set_collection("students", "wohnung_kaufen")
 
     # Sort stages
     stage_sort_by_obseravtionDate = {"$sort": {"observationDate": pymongo.DESCENDING}}
@@ -48,7 +48,7 @@ if __name__ == "__main__":
             "constructionYear": "$constructionYear",
             "apartmentType": "$apartmentType",
             "condition": "$condition",
-            "base_rent": "$rent.rentBase",
+            "price": "$price",
             "parkingCount": "$rent.parking.parkingCount",
             "energyEfficiencyClass": "$energy.energyEfficiencyClass",
             "energyConsumption": "$energy.energyConsumption",
@@ -1510,4 +1510,4 @@ if __name__ == "__main__":
 
     # Daten der Aggregation in Pandas Dataframe ziehen
     df_raw = pd.DataFrame.from_records(list(cursor))
-    df_raw.to_csv("students_data/raw_data.csv", index=False)
+    df_raw.to_csv("wohnung_kaufen/raw_data.csv", index=False)

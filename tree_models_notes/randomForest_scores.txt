@@ -1,0 +1,10 @@
+Hyperparameters:
+{'bootstrap': False, 'ccp_alpha': 0.0, 'criterion': 'squared_error', 'max_depth': None, 'max_features': 50, 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': 0, 'verbose': 0, 'warm_start': False}
+
+Model score with all features:
+[['Schleswig-Holstein', 74.23, 2111], ['Bremen', 68.99, 642], ['Hessen', 73.26, 3440], ['Hamburg', 62.69, 2301], ['Th�ringen', 73.97, 3265], ['Nordrhein-Westfalen', 72.82, 11216], ['Mecklenburg-Vorpommern', 77.72, 1971], ['Bayern', 67.07, 6131], ['Sachsen', 79.24, 15730], ['Brandenburg', 77.75, 1728], ['Berlin', 79.18, 1942], ['Saarland', 53.42, 365], ['Sachsen-Anhalt', 80.59, 6233], ['Baden-W�rttemberg', 60.3, 2985], ['Niedersachsen', 73.7, 3954], ['Rheinland-Pfalz', 66.27, 1241]]
+74.01632917017854
+
+Model score with important features:
+[['Schleswig-Holstein', 73.05, 2111], ['Bremen', 69.77, 642], ['Hessen', 72.53, 3440], ['Hamburg', 64.43, 2301], ['Th�ringen', 73.66, 3265], ['Nordrhein-Westfalen', 72.55, 11216], ['Mecklenburg-Vorpommern', 77.97, 1971], ['Bayern', 66.5, 6131], ['Sachsen', 79.47, 15730], ['Brandenburg', 76.59, 1728], ['Berlin', 77.38, 1942], ['Saarland', 54.79, 365], ['Sachsen-Anhalt', 79.71, 6233], ['Baden-W�rttemberg', 59.46, 2985], ['Niedersachsen', 74.46, 3954], ['Rheinland-Pfalz', 67.87, 1241]]
+73.83359987740404

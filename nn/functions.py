@@ -2,17 +2,6 @@ import numpy as np
 import pandas as pd
 
 
-def evaluate_model(model, X_test, y_test):
-    predictions = model.predict(X_test)
-    errors = [
-        100 * (abs(predictions[i] - y_test[i]) / y_test[i])
-        for i in range(min(len(predictions), len(y_test)))
-    ]
-    count_good_predictions = sum(1 for i in errors if i <= 10)
-    good_predictions = round(np.mean(100 * (count_good_predictions / len(errors))), 2)
-    return good_predictions
-
-
 # Reduce memory usage of dataframe
 def reduce_mem_usage(df):
     """iterate through all the columns of a dataframe and modify the data type
@@ -67,17 +56,78 @@ def import_data(file):
     return df
 
 
-# Evaluate model score
-def evaluate_prediction_score(state_prediction_score):
-    state_prediction_df = pd.DataFrame(
-        state_prediction_score, columns=["state", "score", "inserates"]
-    )
-    number_of_inserates = state_prediction_df["inserates"].sum()
-    state_prediction_df["weighted_score"] = (
-        state_prediction_df["score"] * state_prediction_df["inserates"]
-    )
-    prediction_score_weighted = (
-        state_prediction_df["weighted_score"].sum() / number_of_inserates
-    )
+def init_params():
+    W1 = np.random.rand(10, 89) - 0.5
+    b1 = np.random.rand(10, 1) - 0.5
+    W2 = np.random.rand(10, 10) - 0.5
+    b2 = np.random.rand(10, 1) - 0.5
+    return W1, b1, W2, b2
 
-    return prediction_score_weighted
+
+def ReLU(Z):
+    return np.maximum(Z, 0)
+
+
+def softmax(Z):
+    A = np.exp(Z) / sum(np.exp(Z))
+    return A
+
+
+def forward_prop(W1, b1, W2, b2, X):
+    Z1 = W1.dot(X) + b1
+    A1 = ReLU(Z1)
+    Z2 = W2.dot(A1) + b2
+    A2 = softmax(Z2)
+    return Z1, A1, Z2, A2
+
+
+def ReLU_deriv(Z):
+    return Z > 0
+
+
+def one_hot(Y):
+    one_hot_Y = np.zeros((Y.size, Y.max() + 1))
+    one_hot_Y[np.arange(Y.size), Y] = 1
+    one_hot_Y = one_hot_Y.T
+    return one_hot_Y
+
+
+def backward_prop(Z1, A1, Z2, A2, W1, W2, X, Y):
+    one_hot_Y = one_hot(Y)
+    dZ2 = A2 - one_hot_Y
+    dW2 = 1 / m * dZ2.dot(A1.T)
+    db2 = 1 / m * np.sum(dZ2)
+    dZ1 = W2.T.dot(dZ2) * ReLU_deriv(Z1)
+    dW1 = 1 / m * dZ1.dot(X.T)
+    db1 = 1 / m * np.sum(dZ1)
+    return dW1, db1, dW2, db2
+
+
+def update_params(W1, b1, W2, b2, dW1, db1, dW2, db2, alpha):
+    W1 = W1 - alpha * dW1
+    b1 = b1 - alpha * db1
+    W2 = W2 - alpha * dW2
+    b2 = b2 - alpha * db2
+    return W1, b1, W2, b2
+
+
+def get_predictions(A2):
+    return np.argmax(A2, 0)
+
+
+def get_accuracy(predictions, Y):
+    print(predictions, Y)
+    return np.sum(predictions == Y) / Y.size
+
+
+def gradient_descent(X, Y, alpha, iterations):
+    W1, b1, W2, b2 = init_params()
+    for i in range(iterations):
+        Z1, A1, Z2, A2 = forward_prop(W1, b1, W2, b2, X)
+        dW1, db1, dW2, db2 = backward_prop(Z1, A1, Z2, A2, W1, W2, X, Y)
+        W1, b1, W2, b2 = update_params(W1, b1, W2, b2, dW1, db1, dW2, db2, alpha)
+        if i % 10 == 0:
+            print("Iteration: ", i)
+            predictions = get_predictions(A2)
+            print(get_accuracy(predictions, Y))
+    return W1, b1, W2, b2

@@ -1,0 +1,306 @@
+Model performance:
+72.03971450772728
+
+Model with Hyperparameters:
+XGBRegressor(base_score=0.5, booster='gbtree', callbacks=None,
+             colsample_bylevel=1, colsample_bynode=1, colsample_bytree=0.6,
+             early_stopping_rounds=None, enable_categorical=False, eta=0.1,
+             eval_metric=None, gamma=0, gpu_id=-1, grow_policy='depthwise',
+             importance_type=None, interaction_constraints='',
+             learning_rate=0.100000001, max_bin=256, max_cat_to_onehot=4,
+             max_delta_step=0, max_depth=10, max_leaves=0, min_child_weight=1,
+             missing=nan, monotone_constraints='()', n_estimators=100, n_jobs=0,
+             num_parallel_tree=1, predictor='auto', random_state=0,
+             reg_alpha=0.8, ...)
+
+Features used:
+['postcode', 'livingSpace', 'roomCount', 'floor', 'constructionYear', 'energyEfficiencyClass', 'energyConsumption', 'energyType', 'balcony', 'terrace', 'garden', 'furnished', 'builtInKitchen', 'floorHeating', 'cableConnection', 'undergroundParking', 'outsideParking', 'cellar', 'lift', 'barrierfree', 'wheelchair', 'fireplace', 'longitude', 'latitude', 'coord_confidence', 'nearest_kindergarden', 'nearest_school', 'nearest_university', 'nearest_ATM', 'nearest_bakery', 'nearest_DIY_store', 'nearest_hairdresser', 'nearest_supermarket', 'nearest_clinic', 'nearest_doctor', 'nearest_hospital', 'nearest_pharmacy', 'nearest_airport', 'nearest_bus_stop', 'nearest_charging_station', 'nearest_fuel', 'nearest_harbour', 'nearest_motorway_junction', 'nearest_recycling_center', 'nearest_train_station', 'nearest_tram_station', 'nearest_bar', 'nearest_beergarden', 'nearest_nightclub', 'nearest_restaurant', 'nearest_children', 'nearest_seniors', 'nearest_shelter', 'nearest_hotel', 'nearest_museum', 'Apartment', 'Dachgeschosswohnung', 'Erdgeschosswohnung', 'Etagenwohnung', 'Loft-Studio-Atelier', 'Maisonette', 'Penthouse', 'Sonstiges Renditeobjekt', 'Souterrainwohnung', 'Wohnung', 'Altbau', 'BAUFAELLIG', 'ENTKERNT', 'ERSTBEZUG', 'NEUWERTIG', 'Neubau', 'PROJEKTIERT', 'ROHBAU', 'TEIL_RENOVIERUNGSBED', 'TEIL_VOLLRENOVIERT', 'TEIL_VOLLSANIERT', 'Etagenheizung', 'Ofenheizung', 'Zentralheizung', 'Doppelboden', 'Fliesen', 'Holz/Dielen', 'Laminat', 'Marmor', 'PVC/Linoleum', 'Parkett', 'Sonstiges', 'Stein', 'Teppich', 'Terracotta']
+
+Dataframe:
+'C:\\Users\\soube\\OneDrive\\Desktop\\Hammudi\\Bachelorarbeit\\Repository\\AP-rent-determination\\wohnung_kaufen\\cleaned_data_with_IQR_removal_kaufen.csv'
+
+01:
+('01_best_model', ['Prediction on dataframe: ', ['07', '04', '06', '01', '09', '08', '02', '03'], 'Evaluating with Dataframe: ', '01', 'Prediction score on test data: ', 72.82, 'Number of rows of training data: ', 4783], 1487)
+
+02:
+('02_best_model', ['Prediction on dataframe: ', ['02'], 'Evaluating with Dataframe: ', '02', 'Prediction score on test data: ', 46.67, 'Number of rows of training data: ', 60], 75)
+
+03:
+('03_best_model', ['Prediction on dataframe: ', ['01', '02', '03'], 'Evaluating with Dataframe: ', '03', 'Prediction score on test data: ', 58.33, 'Number of rows of training data: ', 1295], 58)
+
+04:
+('04_best_model', ['Prediction on dataframe: ', ['04', '01', '02', '03'], 'Evaluating with Dataframe: ', '04', 'Prediction score on test data: ', 77.75, 'Number of rows of training data: ', 3217], 2403)
+
+06:
+('06_best_model', ['Prediction on dataframe: ', ['04', '06', '14', '39'], 'Evaluating with Dataframe: ', '06', 'Prediction score on test data: ', 62.81, 'Number of rows of training data: ', 3316], 603)
+
+07:
+('07_best_model', ['Prediction on dataframe: ', ['07', '06'], 'Evaluating with Dataframe: ', '07', 'Prediction score on test data: ', 66.07, 'Number of rows of training data: ', 704], 278)
+
+08:
+('08_best_model', ['Prediction on dataframe: ', ['08'], 'Evaluating with Dataframe: ', '08', 'Prediction score on test data: ', 69.07, 'Number of rows of training data: ', 386], 483)
+
+09:
+('09_best_model', ['Prediction on dataframe: ', ['09', '08'], 'Evaluating with Dataframe: ', '09', 'Prediction score on test data: ', 70.83, 'Number of rows of training data: ', 862], 596)
+
+10:
+('10_best_model', ['Prediction on dataframe: ', ['10'], 'Evaluating with Dataframe: ', '10', 'Prediction score on test data: ', 75.81, 'Number of rows of training data: ', 2229], 2787)
+
+12:
+('12_best_model', ['Prediction on dataframe: ', ['12'], 'Evaluating with Dataframe: ', '12', 'Prediction score on test data: ', 81.25, 'Number of rows of training data: ', 1788], 2236)
+
+13:
+('13_best_model', ['Prediction on dataframe: ', ['14', '13'], 'Evaluating with Dataframe: ', '13', 'Prediction score on test data: ', 80.9, 'Number of rows of training data: ', 2277], 1884)
+
+14:
+('14_best_model', ['Prediction on dataframe: ', ['14', '15'], 'Evaluating with Dataframe: ', '14', 'Prediction score on test data: ', 77.72, 'Number of rows of training data: ', 1001], 963)
+
+15:
+('15_best_model', ['Prediction on dataframe: ', ['15'], 'Evaluating with Dataframe: ', '15', 'Prediction score on test data: ', 81.03, 'Number of rows of training data: ', 231], 289)
+
+16:
+('16_best_model', ['Prediction on dataframe: ', ['16'], 'Evaluating with Dataframe: ', '16', 'Prediction score on test data: ', 85.71, 'Number of rows of training data: ', 193], 242)
+
+17:
+('17_best_model', ['Prediction on dataframe: ', ['18', '17', '19', '16'], 'Evaluating with Dataframe: ', '17', 'Prediction score on test data: ', 63.16, 'Number of rows of training data: ', 856], 186)
+
+18:
+('18_best_model', ['Prediction on dataframe: ', ['18', '17', '14', '15', '16', '13'], 'Evaluating with Dataframe: ', '18', 'Prediction score on test data: ', 73.03, 'Number of rows of training data: ', 3201], 441)
+
+19:
+('19_best_model', ['Prediction on dataframe: ', ['19', '39', '29'], 'Evaluating with Dataframe: ', '19', 'Prediction score on test data: ', 80.49, 'Number of rows of training data: ', 453], 204)
+
+20:
+('20_best_model', ['Prediction on dataframe: ', ['22', '21', '20', '18', '17', '19', '14', '15', '16', '13'], 'Evaluating with Dataframe: ', '20', 'Prediction score on test data: ', 69.57, 'Number of rows of training data: ', 6261], 457)
+
+21:
+('21_best_model', ['Prediction on dataframe: ', ['23', '21', '19', '29'], 'Evaluating with Dataframe: ', '21', 'Prediction score on test data: ', 68.42, 'Number of rows of training data: ', 1527], 855)
+
+22:
+('22_best_model', ['Prediction on dataframe: ', ['22'], 'Evaluating with Dataframe: ', '22', 'Prediction score on test data: ', 69.05, 'Number of rows of training data: ', 1848], 2310)
+
+23:
+('23_best_model', ['Prediction on dataframe: ', ['24', '25', '23', '26'], 'Evaluating with Dataframe: ', '23', 'Prediction score on test data: ', 63.43, 'Number of rows of training data: ', 2364], 666)
+
+24:
+('24_best_model', ['Prediction on dataframe: ', ['24'], 'Evaluating with Dataframe: ', '24', 'Prediction score on test data: ', 68.84, 'Number of rows of training data: ', 796], 995)
+
+25:
+('25_best_model', ['Prediction on dataframe: ', ['24', '25', '23', '26'], 'Evaluating with Dataframe: ', '25', 'Prediction score on test data: ', 70.8, 'Number of rows of training data: ', 2364], 682)
+
+26:
+('26_best_model', ['Prediction on dataframe: ', ['28', '27', '26'], 'Evaluating with Dataframe: ', '26', 'Prediction score on test data: ', 70.73, 'Number of rows of training data: ', 1405], 614)
+
+27:
+('27_best_model', ['Prediction on dataframe: ', ['21', '27'], 'Evaluating with Dataframe: ', '27', 'Prediction score on test data: ', 71.83, 'Number of rows of training data: ', 964], 351)
+
+28:
+('28_best_model', ['Prediction on dataframe: ', ['28', '27', '26'], 'Evaluating with Dataframe: ', '28', 'Prediction score on test data: ', 69.81, 'Number of rows of training data: ', 1405], 793)
+
+29:
+('29_best_model', ['Prediction on dataframe: ', ['29'], 'Evaluating with Dataframe: ', '29', 'Prediction score on test data: ', 67.57, 'Number of rows of training data: ', 148], 185)
+
+30:
+('30_best_model', ['Prediction on dataframe: ', ['38', '31', '30'], 'Evaluating with Dataframe: ', '30', 'Prediction score on test data: ', 65.0, 'Number of rows of training data: ', 1683], 900)
+
+31:
+('31_best_model', ['Prediction on dataframe: ', ['38', '31', '30'], 'Evaluating with Dataframe: ', '31', 'Prediction score on test data: ', 67.07, 'Number of rows of training data: ', 1683], 408)
+
+32:
+('32_best_model', ['Prediction on dataframe: ', ['33', '32'], 'Evaluating with Dataframe: ', '32', 'Prediction score on test data: ', 71.57, 'Number of rows of training data: ', 823], 506)
+
+33:
+('33_best_model', ['Prediction on dataframe: ', ['37', '36', '38', '34', '33', '35'], 'Evaluating with Dataframe: ', '33', 'Prediction score on test data: ', 71.43, 'Number of rows of training data: ', 1909], 524)
+
+34:
+('34_best_model', ['Prediction on dataframe: ', ['37', '36', '34', '33', '35'], 'Evaluating with Dataframe: ', '34', 'Prediction score on test data: ', 73.17, 'Number of rows of training data: ', 1272], 407)
+
+35:
+('35_best_model', ['Prediction on dataframe: ', ['36', '34', '33', '35'], 'Evaluating with Dataframe: ', '35', 'Prediction score on test data: ', 71.23, 'Number of rows of training data: ', 1093], 362)
+
+36:
+('36_best_model', ['Prediction on dataframe: ', ['37', '36', '34'], 'Evaluating with Dataframe: ', '36', 'Prediction score on test data: ', 81.25, 'Number of rows of training data: ', 564], 76)
+
+37:
+('37_best_model', ['Prediction on dataframe: ', ['37', '36', '39', '38', '34', '33', '35'], 'Evaluating with Dataframe: ', '37', 'Prediction score on test data: ', 44.44, 'Number of rows of training data: ', 2051], 224)
+
+38:
+('38_best_model', ['Prediction on dataframe: ', ['37', '36', '39', '38', '34', '40', '33', '35'], 'Evaluating with Dataframe: ', '38', 'Prediction score on test data: ', 72.5, 'Number of rows of training data: ', 2915], 797)
+
+39:
+('39_best_model', ['Prediction on dataframe: ', ['19', '39', '29'], 'Evaluating with Dataframe: ', '39', 'Prediction score on test data: ', 69.44, 'Number of rows of training data: ', 453], 178)
+
+40:
+('40_best_model', ['Prediction on dataframe: ', ['37', '36', '39', '38', '34', '40', '41', '33', '42', '35'], 'Evaluating with Dataframe: ', '40', 'Prediction score on test data: ', 69.59, 'Number of rows of training data: ', 3859], 1081)
+
+41:
+('41_best_model', ['Prediction on dataframe: ', ['37', '36', '39', '38', '34', '40', '41', '33', '42', '35'], 'Evaluating with Dataframe: ', '41', 'Prediction score on test data: ', 76.58, 'Number of rows of training data: ', 3859], 551)
+
+42:
+('42_best_model', ['Prediction on dataframe: ', ['42'], 'Evaluating with Dataframe: ', '42', 'Prediction score on test data: ', 73.23, 'Number of rows of training data: ', 504], 631)
+
+44:
+('44_best_model', ['Prediction on dataframe: ', ['58', '44', '42'], 'Evaluating with Dataframe: ', '44', 'Prediction score on test data: ', 65.13, 'Number of rows of training data: ', 1548], 756)
+
+45:
+('45_best_model', ['Prediction on dataframe: ', ['45', '46', '44'], 'Evaluating with Dataframe: ', '45', 'Prediction score on test data: ', 77.22, 'Number of rows of training data: ', 1857], 1184)
+
+46:
+('46_best_model', ['Prediction on dataframe: ', ['53', '49', '48', '47', '52', '51', '45', '46', '50', '44'], 'Evaluating with Dataframe: ', '46', 'Prediction score on test data: ', 72.73, 'Number of rows of training data: ', 5878], 383)
+
+47:
+('47_best_model', ['Prediction on dataframe: ', ['47'], 'Evaluating with Dataframe: ', '47', 'Prediction score on test data: ', 69.6, 'Number of rows of training data: ', 1000], 1250)
+
+48:
+('48_best_model', ['Prediction on dataframe: ', ['49', '48', '47', '51', '45', '46', '50', '44'], 'Evaluating with Dataframe: ', '48', 'Prediction score on test data: ', 65.96, 'Number of rows of training data: ', 4926], 466)
+
+49:
+('49_best_model', ['Prediction on dataframe: ', ['49'], 'Evaluating with Dataframe: ', '49', 'Prediction score on test data: ', 67.09, 'Number of rows of training data: ', 316], 395)
+
+50:
+('50_best_model', ['Prediction on dataframe: ', ['50'], 'Evaluating with Dataframe: ', '50', 'Prediction score on test data: ', 79.74, 'Number of rows of training data: ', 907], 1134)
+
+51:
+('51_best_model', ['Prediction on dataframe: ', ['49', '48', '47', '52', '51', '45', '46', '50', '44'], 'Evaluating with Dataframe: ', '51', 'Prediction score on test data: ', 68.07, 'Number of rows of training data: ', 5270], 593)
+
+52:
+('52_best_model', ['Prediction on dataframe: ', ['52'], 'Evaluating with Dataframe: ', '52', 'Prediction score on test data: ', 68.97, 'Number of rows of training data: ', 344], 431)
+
+53:
+('53_best_model', ['Prediction on dataframe: ', ['53', '52', '50'], 'Evaluating with Dataframe: ', '53', 'Prediction score on test data: ', 67.97, 'Number of rows of training data: ', 1859], 761)
+
+54:
+('54_best_model', ['Prediction on dataframe: ', ['55', '54'], 'Evaluating with Dataframe: ', '54', 'Prediction score on test data: ', 79.57, 'Number of rows of training data: ', 700], 461)
+
+55:
+('55_best_model', ['Prediction on dataframe: ', ['55'], 'Evaluating with Dataframe: ', '55', 'Prediction score on test data: ', 72.29, 'Number of rows of training data: ', 332], 415)
+
+56:
+('56_best_model', ['Prediction on dataframe: ', ['55', '56', '54', '57'], 'Evaluating with Dataframe: ', '56', 'Prediction score on test data: ', 79.63, 'Number of rows of training data: ', 996], 270)
+
+57:
+('57_best_model', ['Prediction on dataframe: ', ['55', '56', '54', '57', '58', '60', '59', '61'], 'Evaluating with Dataframe: ', '57', 'Prediction score on test data: ', 70.0, 'Number of rows of training data: ', 2691], 100)
+
+58:
+('58_best_model', ['Prediction on dataframe: ', ['57', '58', '51'], 'Evaluating with Dataframe: ', '58', 'Prediction score on test data: ', 67.57, 'Number of rows of training data: ', 994], 551)
+
+59:
+('59_best_model', ['Prediction on dataframe: ', ['55', '56', '54', '57', '63', '58', '60', '59', '64', '61'], 'Evaluating with Dataframe: ', '59', 'Prediction score on test data: ', 58.18, 'Number of rows of training data: ', 3894], 548)
+
+60:
+('60_best_model', ['Prediction on dataframe: ', ['60'], 'Evaluating with Dataframe: ', '60', 'Prediction score on test data: ', 63.87, 'Number of rows of training data: ', 475], 594)
+
+61:
+('61_best_model', ['Prediction on dataframe: ', ['55', '56', '54', '57', '58', '60', '59', '61'], 'Evaluating with Dataframe: ', '61', 'Prediction score on test data: ', 74.42, 'Number of rows of training data: ', 2691], 428)
+
+63:
+('63_best_model', ['Prediction on dataframe: ', ['07', '63', '36'], 'Evaluating with Dataframe: ', '63', 'Prediction score on test data: ', 67.27, 'Number of rows of training data: ', 1161], 1099)
+
+64:
+('64_best_model', ['Prediction on dataframe: ', ['63', '64'], 'Evaluating with Dataframe: ', '64', 'Prediction score on test data: ', 62.96, 'Number of rows of training data: ', 1203], 405)
+
+65:
+('65_best_model', ['Prediction on dataframe: ', ['67', '66', '69', '68', '65'], 'Evaluating with Dataframe: ', '65', 'Prediction score on test data: ', 71.86, 'Number of rows of training data: ', 2846], 992)
+
+66:
+('66_best_model', ['Prediction on dataframe: ', ['66', '65'], 'Evaluating with Dataframe: ', '66', 'Prediction score on test data: ', 65.49, 'Number of rows of training data: ', 1361], 710)
+
+67:
+('67_best_model', ['Prediction on dataframe: ', ['67', '66', '65'], 'Evaluating with Dataframe: ', '67', 'Prediction score on test data: ', 74.05, 'Number of rows of training data: ', 2101], 925)
+
+68:
+('68_best_model', ['Prediction on dataframe: ', ['67', '66', '69', '68', '65'], 'Evaluating with Dataframe: ', '68', 'Prediction score on test data: ', 68.91, 'Number of rows of training data: ', 2846], 593)
+
+69:
+('69_best_model', ['Prediction on dataframe: ', ['69'], 'Evaluating with Dataframe: ', '69', 'Prediction score on test data: ', 70.59, 'Number of rows of training data: ', 271], 339)
+
+70:
+('70_best_model', ['Prediction on dataframe: ', ['70'], 'Evaluating with Dataframe: ', '70', 'Prediction score on test data: ', 80.66, 'Number of rows of training data: ', 846], 1058)
+
+71:
+('71_best_model', ['Prediction on dataframe: ', ['71'], 'Evaluating with Dataframe: ', '71', 'Prediction score on test data: ', 73.05, 'Number of rows of training data: ', 1125], 1407)
+
+72:
+('72_best_model', ['Prediction on dataframe: ', ['72', '78'], 'Evaluating with Dataframe: ', '72', 'Prediction score on test data: ', 70.21, 'Number of rows of training data: ', 1592], 701)
+
+73:
+('73_best_model', ['Prediction on dataframe: ', ['67', '66', '73', '70', '69', '74', '72', '68', '71', '65'], 'Evaluating with Dataframe: ', '73', 'Prediction score on test data: ', 70.27, 'Number of rows of training data: ', 6913], 921)
+
+74:
+('74_best_model', ['Prediction on dataframe: ', ['69', '74'], 'Evaluating with Dataframe: ', '74', 'Prediction score on test data: ', 72.5, 'Number of rows of training data: ', 1071], 1000)
+
+75:
+('75_best_model', ['Prediction on dataframe: ', ['76', '75', '77'], 'Evaluating with Dataframe: ', '75', 'Prediction score on test data: ', 67.89, 'Number of rows of training data: ', 1444], 541)
+
+76:
+('76_best_model', ['Prediction on dataframe: ', ['76', '81', '80', '79', '75', '78', '77', '82'], 'Evaluating with Dataframe: ', '76', 'Prediction score on test data: ', 71.98, 'Number of rows of training data: ', 5784], 908)
+
+77:
+('77_best_model', ['Prediction on dataframe: ', ['77'], 'Evaluating with Dataframe: ', '77', 'Prediction score on test data: ', 79.17, 'Number of rows of training data: ', 286], 358)
+
+78:
+('78_best_model', ['Prediction on dataframe: ', ['79', '78'], 'Evaluating with Dataframe: ', '78', 'Prediction score on test data: ', 70.93, 'Number of rows of training data: ', 2136], 1290)
+
+79:
+('79_best_model', ['Prediction on dataframe: ', ['76', '79', '75', '78', '77'], 'Evaluating with Dataframe: ', '79', 'Prediction score on test data: ', 68.48, 'Number of rows of training data: ', 3580], 1380)
+
+80:
+('80_best_model', ['Prediction on dataframe: ', ['76', '81', '80', '79', '75', '78', '77', '82'], 'Evaluating with Dataframe: ', '80', 'Prediction score on test data: ', 71.35, 'Number of rows of training data: ', 5784], 888)
+
+81:
+('81_best_model', ['Prediction on dataframe: ', ['76', '81', '80', '79', '75', '78', '77', '82', '83'], 'Evaluating with Dataframe: ', '81', 'Prediction score on test data: ', 71.54, 'Number of rows of training data: ', 6244], 1263)
+
+82:
+('82_best_model', ['Prediction on dataframe: ', ['81', '82'], 'Evaluating with Dataframe: ', '82', 'Prediction score on test data: ', 71.31, 'Number of rows of training data: ', 1494], 606)
+
+83:
+('83_best_model', ['Prediction on dataframe: ', ['76', '81', '80', '79', '75', '78', '77', '82', '83'], 'Evaluating with Dataframe: ', '83', 'Prediction score on test data: ', 70.43, 'Number of rows of training data: ', 6244], 575)
+
+84:
+('84_best_model', ['Prediction on dataframe: ', ['93', '94', '84'], 'Evaluating with Dataframe: ', '84', 'Prediction score on test data: ', 74.03, 'Number of rows of training data: ', 1342], 382)
+
+85:
+('85_best_model', ['Prediction on dataframe: ', ['85'], 'Evaluating with Dataframe: ', '85', 'Prediction score on test data: ', 77.71, 'Number of rows of training data: ', 696], 871)
+
+86:
+('86_best_model', ['Prediction on dataframe: ', ['89', '87', '85', '88', '86'], 'Evaluating with Dataframe: ', '86', 'Prediction score on test data: ', 72.38, 'Number of rows of training data: ', 3073], 1195)
+
+87:
+('87_best_model', ['Prediction on dataframe: ', ['89', '87', '88', '86'], 'Evaluating with Dataframe: ', '87', 'Prediction score on test data: ', 73.81, 'Number of rows of training data: ', 2377], 417)
+
+88:
+('88_best_model', ['Prediction on dataframe: ', ['89', '72', '88'], 'Evaluating with Dataframe: ', '88', 'Prediction score on test data: ', 71.51, 'Number of rows of training data: ', 1648], 859)
+
+89:
+('89_best_model', ['Prediction on dataframe: ', ['89', '88'], 'Evaluating with Dataframe: ', '89', 'Prediction score on test data: ', 74.26, 'Number of rows of training data: ', 1088], 502)
+
+90:
+('90_best_model', ['Prediction on dataframe: ', ['90', '89', '91', '92', '87', '85', '88', '86'], 'Evaluating with Dataframe: ', '90', 'Prediction score on test data: ', 74.07, 'Number of rows of training data: ', 5990], 2543)
+
+91:
+('91_best_model', ['Prediction on dataframe: ', ['91'], 'Evaluating with Dataframe: ', '91', 'Prediction score on test data: ', 66.46, 'Number of rows of training data: ', 631], 789)
+
+92:
+('92_best_model', ['Prediction on dataframe: ', ['93', '92'], 'Evaluating with Dataframe: ', '92', 'Prediction score on test data: ', 74.6, 'Number of rows of training data: ', 734], 315)
+
+93:
+('93_best_model', ['Prediction on dataframe: ', ['93', '94', '84'], 'Evaluating with Dataframe: ', '93', 'Prediction score on test data: ', 85.95, 'Number of rows of training data: ', 1342], 603)
+
+94:
+('94_best_model', ['Prediction on dataframe: ', ['94'], 'Evaluating with Dataframe: ', '94', 'Prediction score on test data: ', 66.91, 'Number of rows of training data: ', 555], 694)
+
+95:
+('95_best_model', ['Prediction on dataframe: ', ['07', '95', '96'], 'Evaluating with Dataframe: ', '95', 'Prediction score on test data: ', 68.12, 'Number of rows of training data: ', 751], 342)
+
+96:
+('96_best_model', ['Prediction on dataframe: ', ['96'], 'Evaluating with Dataframe: ', '96', 'Prediction score on test data: ', 62.5, 'Number of rows of training data: ', 256], 320)
+
+97:
+('97_best_model', ['Prediction on dataframe: ', ['74', '97'], 'Evaluating with Dataframe: ', '97', 'Prediction score on test data: ', 67.15, 'Number of rows of training data: ', 1346], 683)
+
+98:
+('98_best_model', ['Prediction on dataframe: ', ['99', '07', '98'], 'Evaluating with Dataframe: ', '98', 'Prediction score on test data: ', 69.23, 'Number of rows of training data: ', 647], 63)
+
+99:
+('99_best_model', ['Prediction on dataframe: ', ['99', '98'], 'Evaluating with Dataframe: ', '99', 'Prediction score on test data: ', 67.02, 'Number of rows of training data: ', 425], 469)
+

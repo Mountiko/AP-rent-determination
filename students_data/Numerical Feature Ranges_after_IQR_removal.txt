@@ -1,0 +1,21 @@
+Numerical Feature Ranges AFTER IQR removal:
+
+LivingSpace Max: 129.47
+LivingSpace Min: 10.0
+
+energyConsumption Max: 160.0
+energyConsumption Min: 48.0
+
+baseRent Max: 1540.0
+baseRent Min: 100.0
+
+constructionYear Max: 2022.0
+constructionYear Min: 1900.0
+
+roomCount Max: 8.0
+roomCount Min: 1.0
+
+floor Max: 30.0
+floor Min: 1.0
+
+Data Shape: (101370, 158)
